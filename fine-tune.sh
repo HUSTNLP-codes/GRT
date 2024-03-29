@@ -27,7 +27,7 @@ bs=128
 mbs=8
 ebs=4
 enc_dim=32
-ckpt_dir = "./saved_models/pretrain/model.pt.X"
+ckpt_dir = "./saved_models/pretrain/model.pt.4"
 
 
 #elr="1e-5"
