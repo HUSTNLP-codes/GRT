@@ -27,6 +27,7 @@ bs=128
 mbs=8
 ebs=4
 enc_dim=32
+ckpt_dir = "./saved_models/pretrain/model.pt.X"
 
 
 #elr="1e-5"
@@ -55,7 +56,7 @@ random_ent_emb=false
 for seed in 1; do
   python3 -u pre-train --dataset $dataset \
       --encoder $model -k $k \
-      -elr $elr -dlr $dlr -bs $bs -mbs ${mbs} -ebs ${ebs} --weight_decay ${weight_decay} --seed 0\
+      -elr $elr -dlr $dlr -bs $bs -mbs ${mbs} -ebs ${ebs} --weight_decay ${weight_decay} --seed 0 --checkpoint_dir $ckpt_dir\
       --n_epochs $n_epochs --max_epochs_before_stop 20  \
       --train_adj data/${dataset}/graph/train.graph.adj.ori2.metapath.2.q2a.seq.pk \
       --dev_adj data/${dataset}/graph/dev.graph.adj.ori2.metapath.2.q2a.seq.pk \
