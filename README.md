@@ -14,7 +14,7 @@ bash setup.sh
 ```
 - Download data
 
-You can download all the preprocessed data with the [link](https://drive.google.com/drive/folders/).
+You can download all the preprocessed data with the [link](https://drive.google.com/file/d/1jEe_T4ZNM4rk0FMDcL8E-sRI2eC5O_qj/view?usp=drive_link).
 
 
 ## Pre-train
